@@ -14,6 +14,7 @@
 		A33FC2BD29ECE0B9005A6D7B /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A33FC2BC29ECE0B9005A6D7B /* CryptoSwift */; };
 		A33FC2BF29ECE0E2005A6D7B /* NFCISO7816Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FC2BE29ECE0E2005A6D7B /* NFCISO7816Tag.swift */; };
 		A33FC2C129ECE1C6005A6D7B /* NFCISO7816TagSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FC2C029ECE1C6005A6D7B /* NFCISO7816TagSession.swift */; };
+		A3501CB729FA19FB003CB7AB /* NFCCommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3501CB629FA19FB003CB7AB /* NFCCommandManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A33F11D729ECD982002B5F33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A33FC2BE29ECE0E2005A6D7B /* NFCISO7816Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCISO7816Tag.swift; sourceTree = "<group>"; };
 		A33FC2C029ECE1C6005A6D7B /* NFCISO7816TagSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCISO7816TagSession.swift; sourceTree = "<group>"; };
+		A3501CB629FA19FB003CB7AB /* NFCCommandManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCCommandManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				A33F11CA29ECD8AE002B5F33 /* ContentView.swift */,
 				A33FC2BE29ECE0E2005A6D7B /* NFCISO7816Tag.swift */,
 				A33FC2C029ECE1C6005A6D7B /* NFCISO7816TagSession.swift */,
+				A3501CB629FA19FB003CB7AB /* NFCCommandManager.swift */,
 				A33F11CC29ECD8AF002B5F33 /* Assets.xcassets */,
 				A33F11CE29ECD8AF002B5F33 /* Preview Content */,
 			);
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3501CB729FA19FB003CB7AB /* NFCCommandManager.swift in Sources */,
 				A33F11CB29ECD8AE002B5F33 /* ContentView.swift in Sources */,
 				A33FC2C129ECE1C6005A6D7B /* NFCISO7816TagSession.swift in Sources */,
 				A33F11C929ECD8AE002B5F33 /* NFCDemoApp.swift in Sources */,

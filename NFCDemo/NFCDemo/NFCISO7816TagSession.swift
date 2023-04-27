@@ -57,7 +57,7 @@ class NFCISO7816TagSession: NSObject, NFCTagReaderSessionDelegate {
         sessionContinuation?.resume(throwing: error)
     }
     
-//    + (NFCSupportsStatus)isSupportsNFCReading{
+//    + (NFCSupportsStatus)isSupportsNFCReading {
 //        if (@available(iOS 11.0,*)) {
 //            if (NFCNDEFReaderSession.readingAvailable == YES) {
 //                return NFCSupportStatusYes;
