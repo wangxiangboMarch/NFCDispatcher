@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("卡号：\(cardNo)")
+            Text("读取到的内容：\(cardNo)")
                 .font(.system(size: 17))
             Button(action: read) {
                 Text("读取")
@@ -29,9 +29,12 @@ struct ContentView: View {
     
     private func read() {
         Task {
-            let session = NFCISO7816TagSession()
-            let cardNo = await NFCCommandManager.readCarInfo(session: session)
-            self.cardNo = cardNo
+//            let session = NFCISO7816TagSession()
+//            let cardNo = await NFCCommandManager.readCarInfo(session: session)
+//            self.cardNo = cardNo
+            
+            let ast = "4d54009d0040867019714d462e"
+            NFCISO7816TagSession.getDAtya(ats: ast)
         }
     }
 }

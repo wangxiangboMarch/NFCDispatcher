@@ -15,6 +15,8 @@
 		A33FC2BF29ECE0E2005A6D7B /* NFCISO7816Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FC2BE29ECE0E2005A6D7B /* NFCISO7816Tag.swift */; };
 		A33FC2C129ECE1C6005A6D7B /* NFCISO7816TagSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FC2C029ECE1C6005A6D7B /* NFCISO7816TagSession.swift */; };
 		A3501CB729FA19FB003CB7AB /* NFCCommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3501CB629FA19FB003CB7AB /* NFCCommandManager.swift */; };
+		A3CE73A22A25FE1700FCEC14 /* WLYUIKitBase in Frameworks */ = {isa = PBXBuildFile; productRef = A3CE73A12A25FE1700FCEC14 /* WLYUIKitBase */; };
+		A3CE73AA2A28543200FCEC14 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CE73A92A28543200FCEC14 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		A33FC2BE29ECE0E2005A6D7B /* NFCISO7816Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCISO7816Tag.swift; sourceTree = "<group>"; };
 		A33FC2C029ECE1C6005A6D7B /* NFCISO7816TagSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCISO7816TagSession.swift; sourceTree = "<group>"; };
 		A3501CB629FA19FB003CB7AB /* NFCCommandManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCCommandManager.swift; sourceTree = "<group>"; };
+		A3CE739F2A25FB3D00FCEC14 /* WLYUIKitBase */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WLYUIKitBase; path = ../../../SPM/WLYUIKitBase; sourceTree = "<group>"; };
+		A3CE73A92A28543200FCEC14 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A33FC2BD29ECE0B9005A6D7B /* CryptoSwift in Frameworks */,
+				A3CE73A22A25FE1700FCEC14 /* WLYUIKitBase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,8 +50,10 @@
 		A33F11BC29ECD8AE002B5F33 = {
 			isa = PBXGroup;
 			children = (
+				A3CE739E2A25FB3D00FCEC14 /* Packages */,
 				A33F11C729ECD8AE002B5F33 /* NFCDemo */,
 				A33F11C629ECD8AE002B5F33 /* Products */,
+				A3CE73A02A25FE1700FCEC14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +75,7 @@
 				A33FC2BE29ECE0E2005A6D7B /* NFCISO7816Tag.swift */,
 				A33FC2C029ECE1C6005A6D7B /* NFCISO7816TagSession.swift */,
 				A3501CB629FA19FB003CB7AB /* NFCCommandManager.swift */,
+				A3CE73A92A28543200FCEC14 /* File.swift */,
 				A33F11CC29ECD8AF002B5F33 /* Assets.xcassets */,
 				A33F11CE29ECD8AF002B5F33 /* Preview Content */,
 			);
@@ -80,6 +88,21 @@
 				A33F11CF29ECD8AF002B5F33 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3CE739E2A25FB3D00FCEC14 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A3CE739F2A25FB3D00FCEC14 /* WLYUIKitBase */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		A3CE73A02A25FE1700FCEC14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +123,7 @@
 			name = NFCDemo;
 			packageProductDependencies = (
 				A33FC2BC29ECE0B9005A6D7B /* CryptoSwift */,
+				A3CE73A12A25FE1700FCEC14 /* WLYUIKitBase */,
 			);
 			productName = NFCDemo;
 			productReference = A33F11C529ECD8AE002B5F33 /* NFCDemo.app */;
@@ -159,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3501CB729FA19FB003CB7AB /* NFCCommandManager.swift in Sources */,
+				A3CE73AA2A28543200FCEC14 /* File.swift in Sources */,
 				A33F11CB29ECD8AE002B5F33 /* ContentView.swift in Sources */,
 				A33FC2C129ECE1C6005A6D7B /* NFCISO7816TagSession.swift in Sources */,
 				A33F11C929ECD8AE002B5F33 /* NFCDemoApp.swift in Sources */,
@@ -386,6 +411,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A33FC2BB29ECE0B9005A6D7B /* XCRemoteSwiftPackageReference "CryptoSwift" */;
 			productName = CryptoSwift;
+		};
+		A3CE73A12A25FE1700FCEC14 /* WLYUIKitBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WLYUIKitBase;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

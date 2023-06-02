@@ -18,7 +18,7 @@ class NFCCommandManager {
     
     
     static func readCarInfo(session: NFCISO7816TagSession) async -> String {
-        let commond = "00A4040008A000000632010105"
+        let commond = "00A4040008A000000632010105"   //"00A4000002DF33"
         do {
             let tag = try await session.begin()
             let cardInfo = try await tag.sendCommand(commond).toHexString()
@@ -26,6 +26,7 @@ class NFCCommandManager {
             print("开始")
             print(cardInfo)
             print("结束")
+            return cardInfo
         }catch {
             print("出错了 .... ")
         }
