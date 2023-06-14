@@ -8,36 +8,29 @@
 import Foundation
 
 
-class Apdu {
+struct Apdu: Codable {
     var name: String = ""
     var type: String = ""
     var apdu: String = ""
 }
 
-class NFCCommandManager {
-    
-    
-    static func readCarInfo(session: NFCISO7816TagSession) async -> String {
-        let commond = "00A4040008A000000632010105"   //"00A4000002DF33"
-        do {
-            let tag = try await session.begin()
-            let cardInfo = try await tag.sendCommand(commond).toHexString()
-            
-            print("开始")
-            print(cardInfo)
-            print("结束")
-            return cardInfo
-        }catch {
-            print("出错了 .... ")
-        }
-        return ""
-    }
-    
-    func checkApdu() -> String {
-        return ""
-    }
-    
-}
+//class NFCCommandManager {
+//
+//    static func readCarInfo(session: NFCISO7816TagSession, commond: String) async -> String {
+//        // let commond = "00A4040008A000000632010105"   //"00A4000002DF33"
+//        do {
+//            let tag = try await session.begin()
+//            let cardInfo = try await tag.sendCommand(commond).toHexString()
+//            print("开始")
+//            print(cardInfo)
+//            print("结束")
+//            return cardInfo
+//        }catch {
+//            print("出错了 .... ")
+//        }
+//        return ""
+//    }
+//}
 
 
 /**
@@ -83,22 +76,7 @@ class NFCCommandManager {
 
 
 
-//do {
-//    // 检测 NFCISO7816Tag
-//    let tag = try await session.begin()
-//    // 这个是 APDU 指令。
-//    // 其中 00 B0 为 CLA 和 INS 段，表示读取数据；
-//    // 95 0A 为 P1 和 P2 段，
-//    // 12 为 LC 段，表示返回数据的长度
-//    // 具体的命令是通过制卡厂商获取，出于数据安全，我只在文档中描述了获取卡信息的命令
-//    // 发送命令 00B0950A12 并截取前 10 个字节转换为 20 位卡号
-//    let cardNo = try await tag.sendCommand("00B0950A12")[0..<10].toHexString()
-//    self.cardNo = cardNo
-//    // 关闭读取会话
-//    session.invalidate(with: "读取成功")
-//} catch {
-//    print(error)
-//}
+
 
 
 

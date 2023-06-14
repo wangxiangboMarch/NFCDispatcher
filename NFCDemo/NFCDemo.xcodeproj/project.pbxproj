@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30939F02A3713A800999270 /* ReadNFCInfoParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30939EF2A3713A800999270 /* ReadNFCInfoParam.swift */; };
 		A33F11C929ECD8AE002B5F33 /* NFCDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F11C829ECD8AE002B5F33 /* NFCDemoApp.swift */; };
 		A33F11CB29ECD8AE002B5F33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33F11CA29ECD8AE002B5F33 /* ContentView.swift */; };
 		A33F11CD29ECD8AF002B5F33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33F11CC29ECD8AF002B5F33 /* Assets.xcassets */; };
 		A33F11D029ECD8AF002B5F33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33F11CF29ECD8AF002B5F33 /* Preview Assets.xcassets */; };
-		A33FC2BD29ECE0B9005A6D7B /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A33FC2BC29ECE0B9005A6D7B /* CryptoSwift */; };
 		A33FC2BF29ECE0E2005A6D7B /* NFCISO7816Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FC2BE29ECE0E2005A6D7B /* NFCISO7816Tag.swift */; };
 		A33FC2C129ECE1C6005A6D7B /* NFCISO7816TagSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FC2C029ECE1C6005A6D7B /* NFCISO7816TagSession.swift */; };
 		A3501CB729FA19FB003CB7AB /* NFCCommandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3501CB629FA19FB003CB7AB /* NFCCommandManager.swift */; };
@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A30939EF2A3713A800999270 /* ReadNFCInfoParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadNFCInfoParam.swift; sourceTree = "<group>"; };
 		A33F11C529ECD8AE002B5F33 /* NFCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33F11C829ECD8AE002B5F33 /* NFCDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCDemoApp.swift; sourceTree = "<group>"; };
 		A33F11CA29ECD8AE002B5F33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,7 +40,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A33FC2BD29ECE0B9005A6D7B /* CryptoSwift in Frameworks */,
 				A3CE73A22A25FE1700FCEC14 /* WLYUIKitBase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +75,7 @@
 				A33FC2BE29ECE0E2005A6D7B /* NFCISO7816Tag.swift */,
 				A33FC2C029ECE1C6005A6D7B /* NFCISO7816TagSession.swift */,
 				A3501CB629FA19FB003CB7AB /* NFCCommandManager.swift */,
+				A30939EF2A3713A800999270 /* ReadNFCInfoParam.swift */,
 				A3CE73A92A28543200FCEC14 /* File.swift */,
 				A33F11CC29ECD8AF002B5F33 /* Assets.xcassets */,
 				A33F11CE29ECD8AF002B5F33 /* Preview Content */,
@@ -122,7 +123,6 @@
 			);
 			name = NFCDemo;
 			packageProductDependencies = (
-				A33FC2BC29ECE0B9005A6D7B /* CryptoSwift */,
 				A3CE73A12A25FE1700FCEC14 /* WLYUIKitBase */,
 			);
 			productName = NFCDemo;
@@ -154,7 +154,6 @@
 			);
 			mainGroup = A33F11BC29ECD8AE002B5F33;
 			packageReferences = (
-				A33FC2BB29ECE0B9005A6D7B /* XCRemoteSwiftPackageReference "CryptoSwift" */,
 			);
 			productRefGroup = A33F11C629ECD8AE002B5F33 /* Products */;
 			projectDirPath = "";
@@ -182,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A30939F02A3713A800999270 /* ReadNFCInfoParam.swift in Sources */,
 				A3501CB729FA19FB003CB7AB /* NFCCommandManager.swift in Sources */,
 				A3CE73AA2A28543200FCEC14 /* File.swift in Sources */,
 				A33F11CB29ECD8AE002B5F33 /* ContentView.swift in Sources */,
@@ -395,23 +395,7 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		A33FC2BB29ECE0B9005A6D7B /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:krzyzanowskim/CryptoSwift.git";
-			requirement = {
-				kind = exactVersion;
-				version = 1.7.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		A33FC2BC29ECE0B9005A6D7B /* CryptoSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A33FC2BB29ECE0B9005A6D7B /* XCRemoteSwiftPackageReference "CryptoSwift" */;
-			productName = CryptoSwift;
-		};
 		A3CE73A12A25FE1700FCEC14 /* WLYUIKitBase */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = WLYUIKitBase;
